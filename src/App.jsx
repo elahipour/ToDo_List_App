@@ -3,9 +3,9 @@ import style from './Styles/style.module.css';
 import './Styles/fontStyle.css';
 import AddToDo from './Components/AddToDo';
 import ToDos from './Components/ToDos';
-import trash from './Icons/trash.svg';
-import update from './Icons/pen.svg';
-import mark from './Icons/check.svg';
+import trash from './icons/trash.svg';
+import update from './icons/pen.svg';
+import mark from './icons/check.svg';
 import FilterButtons from './Components/FilterButtons';
 import TaskFilter from './Components/TaskFilter';
 import UpdateToDo from './Components/UpdateToDo';
@@ -165,7 +165,7 @@ function App(props) {
 
             {/* Add ToDo Component */}
 
-            <AddToDo style={style.addToDoForm} newtask={newTask} changeHandler={(e) => handleChange(e)} warningStyle={style.warning} addtodo={(e) => addToDo(e)} />
+            <AddToDo style={style} newtask={newTask} changeHandler={(e) => handleChange(e)} warningStyle={style.warning} addtodo={(e) => addToDo(e)} />
             {toDo && toDo.length ? '' : <p style={{ textAlign: "center", padding: "10px" }}>no task is defined...</p>}
 
             {/* Task Filter(Completed,Uncompleted,All Tasks) */}
